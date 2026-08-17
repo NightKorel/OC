@@ -6,31 +6,37 @@ type: style-reference
 
 # 埃洛 — 畫風與外型參考
 
-作者提供的既有參考圖定調。整理設定時的視覺基準。
+依角色卡設定與作者參考圖整理，作為生圖與一致性的基準。
+
+## 重點色號（建議值，可調）
+
+| 部位 | 色號 |
+|------|------|
+| 眼 | `#4E9E7E 翡翠綠` |
+| 髮 | `#E6E6EA 銀白` |
+| 膚 | `#F3EAE2 蒼白` |
+| 招牌 | `#4A5548 墨綠兜帽斗篷` |
 
 ## 外型 canon
-- 白銀色長直髮，中分，幾綹垂在臉側
-- 綠眼，眼神疲憊半垂、憂鬱
-- 蒼白皮膚、尖精靈耳、纖瘦
-- 氣質：清冷、孤寂、脆弱又美
+- 銀白色長直髮、中分、幾綹垂臉
+- 翡翠綠眼、眼神疲憊半垂憂鬱
+- 蒼白皮膚、尖精靈耳、纖瘦（19 歲）
+- 半精靈，永遠戴兜帽遮尖耳
 
 ## 招牌服裝
-- **奇幻版**：黑色或墨綠色高領兜帽斗篷，兜帽戴起遮住尖耳（招牌）
-- **現代休閒版**：軍綠外套 / 襯衫夾克、素色 T、銀色墜飾項鍊、深色長褲或牛仔褲、白色運動鞋
+- 奇幻：黑色或墨綠高領兜帽斗篷，兜帽戴起遮耳（招牌）
+- 現代休閒：軍綠外套、素 T、銀色墜飾項鍊、深色長褲、白球鞋
 
 ## 畫風
-精緻日系動漫插畫（pixiv / Illustrious 質感）：乾淨線稿、柔和平塗、低彩度、
-素或淺色背景、柔和陰影。**不要寫實照片感、不要 3D/CG 感。**
+精緻日系動漫插畫（PixAI / Illustrious 系模型）：乾淨線稿、柔和平塗、低到中彩度、素或淺色背景。避免寫實照片感與 3D/CG 感。
 
-## 生圖 prompt（英文，可貼 Gemini / 動漫模型）
-> masterpiece, best quality, refined Japanese anime illustration, clean lineart,
-> soft cel shading, muted palette, plain background. A slender pale young half-elf
-> man, long straight silver-white hair center part, pale green eyes with tired
-> half-lidded melancholic gaze, pointed elf ears, delicate features. Black or dark
-> green high-collar hooded cloak with hood up hiding his ears. Quiet cold lonely
-> beautiful atmosphere.
+## 生圖 prompt（danbooru 標籤式，適合 PixAI / Illustrious）
+> 1boy, half-elf, long straight silver-white hair, center part, green eyes, pointed ears, pale skin, thin slender, melancholic half-lidded eyes, black or dark green hooded cloak, hood up, masterpiece, best quality, detailed
 
-## 參考圖檔
-作者提供，本資料夾內：
-- `埃洛_01.jpg`～`埃洛_06.png`：奇幻兜帽斗篷版、現代休閒版、露尖耳特寫等。
-- 畫風來源：PixAI（Illustrious 系動漫模型）。
+## 參考圖檔（本資料夾）
+- `埃洛_01.jpg`
+- `埃洛_02.jpg`
+- `埃洛_03.png`
+- `埃洛_04.png`
+- `埃洛_05.png`
+- `埃洛_06.png`
