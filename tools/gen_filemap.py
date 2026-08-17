@@ -66,6 +66,27 @@ def main():
             out.append(f"| {s.name} | {nc} | {ns} | {nw} |")
         out.append("")
 
+    # 各套 gallery 圖片統計
+    if sets_dir.exists():
+        for s in sorted(p for p in sets_dir.iterdir() if p.is_dir()):
+            gal = s / "gallery"
+            if not gal.exists():
+                continue
+            rows = []
+            for cd in sorted(p for p in gal.iterdir() if p.is_dir() and not p.name.startswith("_")):
+                imgs = [f for f in cd.iterdir()
+                        if f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp")]
+                has_style = (cd / "STYLE.md").exists()
+                if imgs or has_style:
+                    rows.append((cd.name, len(imgs), "✓" if has_style else ""))
+            if rows:
+                out.append(f"## {s.name} — gallery 圖庫\n")
+                out.append("| 角色 | 圖數 | 畫風檔 |")
+                out.append("|------|-----:|:------:|")
+                for name, n, st in rows:
+                    out.append(f"| {name} | {n} | {st} |")
+                out.append("")
+
     out.append("## 完整檔案樹\n")
     out += tree_lines(ROOT)
     out.append("")
