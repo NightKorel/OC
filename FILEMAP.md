@@ -61,6 +61,7 @@ _自動產生，最後更新：2026-08-17。請執行 `python3 tools/gen_filemap
   - `world.template.md` — # 世界名稱
 - **tools/**
   - `gen_filemap.py`
+  - `gen_style.py`
   - `split_set01.py`
 - **worlds/**
 
