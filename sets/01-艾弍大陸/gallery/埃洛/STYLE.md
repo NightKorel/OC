@@ -31,4 +31,6 @@ type: style-reference
 > beautiful atmosphere.
 
 ## 參考圖檔
-> 作者的原始參考圖待補（見對話）。放進本資料夾後，於此列出檔名。
+作者提供，本資料夾內：
+- `埃洛_01.jpg`～`埃洛_06.png`：奇幻兜帽斗篷版、現代休閒版、露尖耳特寫等。
+- 畫風來源：PixAI（Illustrious 系動漫模型）。
