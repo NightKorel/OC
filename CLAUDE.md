@@ -28,6 +28,11 @@ FILEMAP.md               檔案地圖（自動產生）
 4. **每個角色卡開頭放 YAML frontmatter**（name/id/set/race/age/pair/status/image_prompt…），
    劇情線放（title/set/type/order/status），方便程式化處理與未來做酷東西。
 5. **每一世界只掌握自己世界的資訊**；跨世界共用的東西才放 `shared/`。
+6. **給生圖提示詞前，先上網搜尋該 AI 的提示詞技巧**（例：Gemini／Nano Banana、PixAI／
+   Illustrious、Midjourney 各有偏好），再依查到的技巧客製提示詞，不要憑印象亂給。
+   - Gemini／Nano Banana：偏好豐富**自然語言**描述，涵蓋主體、風格、光線、構圖、氛圍、
+     長寬比；2–5 行、精準勝過冗長。
+   - PixAI／Illustrious：偏好 **danbooru 標籤式**（`1boy, silver hair, ...`）＋負面提示詞。
 
 ## 常用指令
 
