@@ -60,9 +60,9 @@ def main():
         out.append("| 套 | 角色 | 劇情線 | 世界觀檔 |")
         out.append("|----|-----:|-------:|--------:|")
         for s in sorted(p for p in sets_dir.iterdir() if p.is_dir()):
-            nc = len(list((s/"characters").glob("*.md"))) if (s/"characters").exists() else 0
-            ns = len(list((s/"storylines").glob("*.md"))) if (s/"storylines").exists() else 0
-            nw = len(list((s/"world").glob("*.md"))) if (s/"world").exists() else 0
+            nc = len(list(s.glob("**/characters/*.md")))
+            ns = len(list(s.glob("**/storylines/*.md")))
+            nw = len(list(s.glob("**/world/*.md")))
             out.append(f"| {s.name} | {nc} | {ns} | {nw} |")
         out.append("")
 

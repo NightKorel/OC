@@ -7,6 +7,10 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 | 套 | 角色 | 劇情線 | 世界觀檔 |
 |----|-----:|-------:|--------:|
 | 01-艾弍大陸 | 14 | 17 | 2 |
+| 02-北大 | 6 | 3 | 6 |
+| 03-北迴 | 1 | 0 | 5 |
+| 04-北娛 | 1 | 3 | 1 |
+| 05-北靈 | 1 | 0 | 2 |
 
 ## 完整檔案樹
 
@@ -15,7 +19,10 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 - `README.md`
 - **assets/**
   - `oc-readme-portrait.png`
+- **gallery/**
+  - `README.md` — 角色圖庫規則
 - **sets/**
+  - `README.md`
   - **01-艾弍大陸/**
     - `README.md`
     - **characters/**
@@ -54,8 +61,87 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
     - **world/**
       - `00-世界觀設定.md` — worldbuilding
       - `99-名詞對照.md` — glossary
+  - **02-北大/**
+    - `README.md`
+    - **characters/**
+    - **if/**
+      - `README.md`
+      - **Noir/**
+        - `README.md`
+        - **characters/**
+          - `00-角色設定總覽.md` — Noir角色設定總覽 / reference
+        - **storylines/**
+          - `01-幽鬼往事與Noir行動.md` — 幽鬼往事與Noir行動 / storyline
+        - **world/**
+          - `00-北境分局設定.md` — Noir北境分局設定 / worldbuilding
+      - **墜機/**
+        - `README.md`
+        - **characters/**
+          - `00-角色設定總覽.md` — 墜機IF角色設定總覽 / reference
+        - **storylines/**
+        - **world/**
+          - `00-島嶼與墜機設定.md` — 墜機IF島嶼與墜機設定 / worldbuilding
+      - **奈何/**
+        - `README.md`
+        - **characters/**
+          - `00-角色設定總覽.md` — 奈何角色設定總覽 / reference
+        - **storylines/**
+          - `01-劇情大綱.md` — 奈何劇情大綱 / storyline
+        - **world/**
+          - `00-世界觀設定.md` — 奈何世界觀設定 / worldbuilding
+    - **storylines/**
+    - **world/**
+    - **北大/**
+      - `README.md`
+      - **characters/**
+        - `00-主要角色設定.md` — 北大主要角色設定 / reference
+        - `01-配角列表.md` — 北大配角列表 / reference
+      - **storylines/**
+      - **world/**
+        - `00-北境大學校園與周邊.md` — 北境大學校園與周邊 / worldbuilding
+        - `01-北境分局.md` — 北境分局 / worldbuilding
+    - **幽鬼往事/**
+      - `README.md`
+      - **characters/**
+        - `00-角色設定總覽.md` — 幽鬼往事角色設定總覽 / reference
+      - **storylines/**
+        - `01-幽鬼往事劇情.md` — 幽鬼往事劇情 / storyline
+      - **world/**
+        - `00-北境分局設定.md` — 幽鬼往事北境分局設定 / worldbuilding
+  - **03-北迴/**
+    - `README.md`
+    - **characters/**
+      - `00-角色設定總覽.md` — 北迴角色設定總覽 / reference
+    - **storylines/**
+    - **world/**
+      - `00-安可社世界觀設定.md` — 安可社世界觀設定 / worldbuilding
+      - `01-任務系統設定.md` — 任務系統設定 / worldbuilding
+      - `02-錨組織架構與異變.md` — 錨組織架構與異變 / worldbuilding
+      - `03-園區與生活.md` — 園區與生活 / worldbuilding
+      - `04-直播與粉絲文化.md` — 直播與粉絲文化 / worldbuilding
+  - **04-北娛/**
+    - `README.md`
+    - **characters/**
+      - `00-主要角色設定.md` — 北娛主要角色設定 / reference
+    - **storylines/**
+      - `00-完整時間線.md` — 北娛完整時間線 / storyline
+      - `01-布萊克作品與斷橋.md` — 布萊克作品與斷橋 / storyline
+      - `02-斷橋與後續劇情.md` — 斷橋與後續劇情 / storyline
+    - **world/**
+      - `00-世界觀與配角.md` — 北娛世界觀與配角 / worldbuilding
+  - **05-北靈/**
+    - `README.md`
+    - **characters/**
+      - `00-角色設定總覽.md` — 北靈角色設定總覽 / reference
+    - **storylines/**
+    - **world/**
+      - `00-世界觀與北境工作室.md` — 北靈世界觀與北境工作室 / worldbuilding
+      - `01-官方顧問線與北境分局.md` — 官方顧問線與北境分局 / worldbuilding
+- **shared/**
+  - `README.md`
 - **templates/**
   - `character.template.md` — # 顯示名稱
+  - `set.template.md`
   - `storyline.template.md` — # 劇情線名稱 / storyline
   - `world.template.md` — # 世界名稱
 - **tools/**
