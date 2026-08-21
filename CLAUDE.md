@@ -10,7 +10,7 @@ sets/<編號-世界名>/      每一「套」世界一個資料夾
   world/                 世界觀設定、名詞對照
   characters/            角色卡，一角色一檔
   storylines/            劇情線／編年紀事，一線一檔
-gallery/<角色名稱>/<世界觀或風格>/  共用角色圖庫
+gallery/<角色名稱>角色圖/  共用角色圖庫
 shared/                  跨世界共用的原型與設定（相似世界的共同基底）
 templates/               開新世界/角色/劇情線用的空白範本
 tools/                   所有輔助腳本
@@ -38,5 +38,5 @@ FILEMAP.md               檔案地圖（自動產生）
 
 免費、可直接用的無金鑰服務：`https://image.pollinations.ai/prompt/<英文描述>?width=768&height=768&nologo=true`
 （已加入本環境網路白名單）。流程：Claude 依角色卡的 `image_prompt` 生圖 → 自行審核破綻
-（手指、對稱、文字亂碼）→ 只把過關的給作者 → 存入根目錄的 `gallery/<角色名稱>/`。
+（手指、對稱、文字亂碼）→ 只把過關的給作者 → 存入根目錄的 `gallery/<角色名稱>角色圖/`。
 商用需求另議（Pollinations 無商用保障，商用建議 Adobe Firefly）。
