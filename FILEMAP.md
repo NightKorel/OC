@@ -9,7 +9,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 | 01-艾弍大陸 | 14 | 17 | 2 |
 | 02-北大 | 0 | 0 | 0 |
 | 03-北迴 | 1 | 0 | 5 |
-| 04-北娛 | 0 | 0 | 0 |
+| 04-北娛 | 1 | 3 | 1 |
 | 05-北靈 | 0 | 0 | 0 |
 
 ## 完整檔案樹
@@ -78,8 +78,13 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
   - **04-北娛/**
     - `README.md`
     - **characters/**
+      - `00-主要角色設定.md` — 北娛主要角色設定 / reference
     - **storylines/**
+      - `00-完整時間線.md` — 北娛完整時間線 / storyline
+      - `01-布萊克作品與斷橋.md` — 布萊克作品與斷橋 / storyline
+      - `02-斷橋與後續劇情.md` — 斷橋與後續劇情 / storyline
     - **world/**
+      - `00-世界觀與配角.md` — 北娛世界觀與配角 / worldbuilding
   - **05-北靈/**
     - `README.md`
     - **characters/**
