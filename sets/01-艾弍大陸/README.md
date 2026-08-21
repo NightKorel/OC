@@ -35,5 +35,5 @@ status: canon
 ## 待辦
 
 - [ ] 為每個角色卡補 `image_prompt`（生圖用英文描述）
-- [ ] 生成角色參考圖，存入 `gallery/`
+- [ ] 生成角色參考圖，存入根目錄的 `gallery/<角色名稱>/`
 - [ ] 若有此世界的 if 分支，於 `storylines/` 或另開資料夾記錄
