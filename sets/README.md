@@ -15,3 +15,7 @@
 ## 新增世界套
 
 使用下一個兩位數編號建立新資料夾，例如 06-世界名。目錄結構可參考 templates/set.template.md；新增後請更新根目錄 README，並執行 python3 tools/gen_filemap.py。
+
+## 圖片
+
+角色圖片統一收在根目錄的 [gallery/](../gallery/)。

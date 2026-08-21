@@ -19,4 +19,3 @@
 - world/：北大本體與 IF 分支的世界觀設定。
 - characters/：角色卡。
 - storylines/：劇情線與編年紀事。
-- gallery/：生成圖與對應 prompt。

@@ -10,4 +10,3 @@
 - [北境分局](world/01-北境分局.md)
 
 - storylines/：劇情線與編年紀事。
-- gallery/：生成圖與對應 prompt。

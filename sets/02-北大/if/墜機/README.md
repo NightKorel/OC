@@ -8,4 +8,3 @@
 - characters/00-角色設定總覽.md：埃洛、布萊克、凱、羅爾、修與維伊。
 
 - storylines/：劇情線與編年紀事。
-- gallery/：生成圖與對應 prompt。

@@ -8,4 +8,3 @@
 - storylines/01-幽鬼往事與Noir行動.md：2018 年的劇情、Noir 方案與後續敘事節點。
 - world/00-北境分局設定.md：北境分局組織與設施設定。
 
-- gallery/：生成圖與對應 prompt。
