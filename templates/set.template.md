@@ -7,8 +7,6 @@
       world/
       characters/
       storylines/
-      gallery/
-
 ## README.md 範本
 
 # 世界名
@@ -20,3 +18,7 @@
 ## 與其他世界套的關係
 
 （若有共用角色原型或設定，標示對應的 shared 資料。）
+
+## 圖片
+
+角色圖片統一收於根目錄 `gallery/<角色名稱>/<世界觀或風格>/`。
