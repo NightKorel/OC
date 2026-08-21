@@ -63,6 +63,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
       - `99-名詞對照.md` — glossary
   - **02-北大/**
     - `README.md`
+    - `00-項目定位與關係.md` — 北大項目定位與關係
     - **characters/**
     - **if/**
       - `README.md`
@@ -139,6 +140,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
       - `01-官方顧問線與北境分局.md` — 官方顧問線與北境分局 / worldbuilding
 - **shared/**
   - `README.md`
+  - `角色對照.md` — 跨世界角色對照
 - **templates/**
   - `character.template.md` — # 顯示名稱
   - `set.template.md`
