@@ -7,7 +7,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 | 套 | 角色 | 劇情線 | 世界觀檔 |
 |----|-----:|-------:|--------:|
 | 01-艾弍大陸 | 14 | 17 | 2 |
-| 02-北大 | 4 | 3 | 4 |
+| 02-北大 | 6 | 3 | 6 |
 | 03-北迴 | 1 | 0 | 5 |
 | 04-北娛 | 1 | 3 | 1 |
 | 05-北靈 | 1 | 0 | 2 |
@@ -89,14 +89,23 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
           - `00-世界觀設定.md` — 奈何世界觀設定 / worldbuilding
     - **storylines/**
     - **world/**
-  - **幽鬼往事/**
-    - `README.md`
-    - **characters/**
-      - `00-角色設定總覽.md` — 幽鬼往事角色設定總覽 / reference
-    - **storylines/**
-      - `01-幽鬼往事劇情.md` — 幽鬼往事劇情 / storyline
-    - **world/**
-      - `00-北境分局設定.md` — 幽鬼往事北境分局設定 / worldbuilding
+    - **北大/**
+      - `README.md`
+      - **characters/**
+        - `00-主要角色設定.md` — 北大主要角色設定 / reference
+        - `01-配角列表.md` — 北大配角列表 / reference
+      - **storylines/**
+      - **world/**
+        - `00-北境大學校園與周邊.md` — 北境大學校園與周邊 / worldbuilding
+        - `01-北境分局.md` — 北境分局 / worldbuilding
+    - **幽鬼往事/**
+      - `README.md`
+      - **characters/**
+        - `00-角色設定總覽.md` — 幽鬼往事角色設定總覽 / reference
+      - **storylines/**
+        - `01-幽鬼往事劇情.md` — 幽鬼往事劇情 / storyline
+      - **world/**
+        - `00-北境分局設定.md` — 幽鬼往事北境分局設定 / worldbuilding
   - **03-北迴/**
     - `README.md`
     - **characters/**
