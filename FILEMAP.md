@@ -7,6 +7,10 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 | 套 | 角色 | 劇情線 | 世界觀檔 |
 |----|-----:|-------:|--------:|
 | 01-艾弍大陸 | 14 | 17 | 2 |
+| 02-北大 | 0 | 0 | 0 |
+| 03-北迴 | 0 | 0 | 0 |
+| 04-北娛 | 0 | 0 | 0 |
+| 05-北靈 | 0 | 0 | 0 |
 
 ## 完整檔案樹
 
@@ -16,6 +20,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 - **assets/**
   - `oc-readme-portrait.png`
 - **sets/**
+  - `README.md`
   - **01-艾弍大陸/**
     - `README.md`
     - **characters/**
@@ -54,8 +59,31 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
     - **world/**
       - `00-世界觀設定.md` — worldbuilding
       - `99-名詞對照.md` — glossary
+  - **02-北大/**
+    - `README.md`
+    - **characters/**
+    - **storylines/**
+    - **world/**
+  - **03-北迴/**
+    - `README.md`
+    - **characters/**
+    - **storylines/**
+    - **world/**
+  - **04-北娛/**
+    - `README.md`
+    - **characters/**
+    - **storylines/**
+    - **world/**
+  - **05-北靈/**
+    - `README.md`
+    - **characters/**
+    - **storylines/**
+    - **world/**
+- **shared/**
+  - `README.md`
 - **templates/**
   - `character.template.md` — # 顯示名稱
+  - `set.template.md`
   - `storyline.template.md` — # 劇情線名稱 / storyline
   - `world.template.md` — # 世界名稱
 - **tools/**
