@@ -19,6 +19,8 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 - `README.md`
 - **assets/**
   - `oc-readme-portrait.png`
+- **gallery/**
+  - `README.md` — 角色圖庫規則
 - **sets/**
   - `README.md`
   - **01-艾弍大陸/**
