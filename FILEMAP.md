@@ -7,7 +7,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 | 套 | 角色 | 劇情線 | 世界觀檔 |
 |----|-----:|-------:|--------:|
 | 01-艾弍大陸 | 14 | 17 | 2 |
-| 02-北大 | 1 | 1 | 1 |
+| 02-北大 | 2 | 2 | 2 |
 | 03-北迴 | 1 | 0 | 5 |
 | 04-北娛 | 1 | 3 | 1 |
 | 05-北靈 | 1 | 0 | 2 |
@@ -64,6 +64,14 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
     - **characters/**
     - **if/**
       - `README.md`
+      - **Noir/**
+        - `README.md`
+        - **characters/**
+          - `00-角色設定總覽.md` — Noir角色設定總覽 / reference
+        - **storylines/**
+          - `01-幽鬼往事與Noir行動.md` — 幽鬼往事與Noir行動 / storyline
+        - **world/**
+          - `00-北境分局設定.md` — Noir北境分局設定 / worldbuilding
       - **奈何/**
         - `README.md`
         - **characters/**
