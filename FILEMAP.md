@@ -1,6 +1,6 @@
 # 檔案地圖 (FILEMAP)
 
-_自動產生，最後更新：2026-08-17。請執行 `python3 tools/gen_filemap.py` 更新，勿手動編輯。_
+_自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap.py` 更新，勿手動編輯。_
 
 ## 世界套目錄
 
@@ -13,6 +13,8 @@ _自動產生，最後更新：2026-08-17。請執行 `python3 tools/gen_filemap
 - `CLAUDE.md`
 - `FILEMAP.md`
 - `README.md`
+- **assets/**
+  - `oc-readme-portrait.png`
 - **sets/**
   - **01-艾弍大陸/**
     - `README.md`
@@ -52,9 +54,6 @@ _自動產生，最後更新：2026-08-17。請執行 `python3 tools/gen_filemap
     - **world/**
       - `00-世界觀設定.md` — worldbuilding
       - `99-名詞對照.md` — glossary
-- **shared/**
-  - **archetypes/**
-  - **lore/**
 - **templates/**
   - `character.template.md` — # 顯示名稱
   - `storyline.template.md` — # 劇情線名稱 / storyline
@@ -62,5 +61,4 @@ _自動產生，最後更新：2026-08-17。請執行 `python3 tools/gen_filemap
 - **tools/**
   - `gen_filemap.py`
   - `split_set01.py`
-- **worlds/**
 
