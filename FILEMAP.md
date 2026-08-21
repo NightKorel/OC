@@ -10,7 +10,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 | 02-北大 | 0 | 0 | 0 |
 | 03-北迴 | 1 | 0 | 5 |
 | 04-北娛 | 1 | 3 | 1 |
-| 05-北靈 | 0 | 0 | 0 |
+| 05-北靈 | 1 | 0 | 2 |
 
 ## 完整檔案樹
 
@@ -88,8 +88,11 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
   - **05-北靈/**
     - `README.md`
     - **characters/**
+      - `00-角色設定總覽.md` — 北靈角色設定總覽 / reference
     - **storylines/**
     - **world/**
+      - `00-世界觀與北境工作室.md` — 北靈世界觀與北境工作室 / worldbuilding
+      - `01-官方顧問線與北境分局.md` — 官方顧問線與北境分局 / worldbuilding
 - **shared/**
   - `README.md`
 - **templates/**
