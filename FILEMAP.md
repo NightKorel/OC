@@ -8,7 +8,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 |----|-----:|-------:|--------:|
 | 01-艾弍大陸 | 14 | 17 | 2 |
 | 02-北大 | 0 | 0 | 0 |
-| 03-北迴 | 0 | 0 | 0 |
+| 03-北迴 | 1 | 0 | 5 |
 | 04-北娛 | 0 | 0 | 0 |
 | 05-北靈 | 0 | 0 | 0 |
 
@@ -67,8 +67,14 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
   - **03-北迴/**
     - `README.md`
     - **characters/**
+      - `00-角色設定總覽.md` — 北迴角色設定總覽 / reference
     - **storylines/**
     - **world/**
+      - `00-安可社世界觀設定.md` — 安可社世界觀設定 / worldbuilding
+      - `01-任務系統設定.md` — 任務系統設定 / worldbuilding
+      - `02-錨組織架構與異變.md` — 錨組織架構與異變 / worldbuilding
+      - `03-園區與生活.md` — 園區與生活 / worldbuilding
+      - `04-直播與粉絲文化.md` — 直播與粉絲文化 / worldbuilding
   - **04-北娛/**
     - `README.md`
     - **characters/**
