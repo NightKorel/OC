@@ -2,6 +2,10 @@
 
 收整多個 OC 世界的設定、角色與劇情線。世界之間相似又不同，並有各種「if」分支。
 
+<p align="center">
+  <img src="assets/oc-readme-portrait.png" alt="OC 抽象肖像" width="420">
+</p>
+
 ## 快速導覽
 
 - 各世界在 [`sets/`](sets/)，目前有：
