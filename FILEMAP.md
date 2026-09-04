@@ -1,6 +1,6 @@
 # 檔案地圖 (FILEMAP)
 
-_自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap.py` 更新，勿手動編輯。_
+_自動產生，最後更新：2026-09-04。請執行 `python3 tools/gen_filemap.py` 更新，勿手動編輯。_
 
 ## 世界套目錄
 
@@ -19,8 +19,8 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
 - `README.md`
 - **assets/**
   - `oc-readme-portrait.png`
-- **gallery/**
-  - `README.md` — 角色圖庫規則
+- **novels/**
+  - `README.md`
 - **sets/**
   - `README.md`
   - **01-艾弍大陸/**
@@ -62,8 +62,8 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
       - `00-世界觀設定.md` — worldbuilding
       - `99-名詞對照.md` — glossary
   - **02-北大/**
+    - `00-項目定位與關係.md`
     - `README.md`
-    - `00-項目定位與關係.md` — 北大項目定位與關係
     - **characters/**
     - **if/**
       - `README.md`
@@ -79,7 +79,6 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
         - `README.md`
         - **characters/**
           - `00-角色設定總覽.md` — 墜機IF角色設定總覽 / reference
-        - **storylines/**
         - **world/**
           - `00-島嶼與墜機設定.md` — 墜機IF島嶼與墜機設定 / worldbuilding
       - **奈何/**
@@ -95,12 +94,11 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
     - **北大/**
       - `README.md`
       - **characters/**
-        - `00-主要角色設定.md` — 北大主要角色設定 / reference
-        - `01-配角列表.md` — 北大配角列表 / reference
-      - **storylines/**
+        - `00-主要角色設定.md` — 北大主要角色設定
+        - `01-配角列表.md` — 北大配角列表
       - **world/**
-        - `00-北境大學校園與周邊.md` — 北境大學校園與周邊 / worldbuilding
-        - `01-北境分局.md` — 北境分局 / worldbuilding
+        - `00-北境大學校園與周邊.md` — 北境大學校園與周邊
+        - `01-北境分局.md` — 北境分局
     - **幽鬼往事/**
       - `README.md`
       - **characters/**
@@ -140,7 +138,7 @@ _自動產生，最後更新：2026-08-22。請執行 `python3 tools/gen_filemap
       - `01-官方顧問線與北境分局.md` — 官方顧問線與北境分局 / worldbuilding
 - **shared/**
   - `README.md`
-  - `角色對照.md` — 跨世界角色對照
+  - `角色對照.md`
 - **templates/**
   - `character.template.md` — # 顯示名稱
   - `set.template.md`
