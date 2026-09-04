@@ -6,7 +6,7 @@
 import os, re, datetime, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SKIP_DIRS = {".git", "gallery"}
+SKIP_DIRS = {".git", "gallery", "切分"}  # 切分為腳本生成，另有自身索引，不逐檔列入
 OUT = ROOT / "FILEMAP.md"
 
 def read_front(path):
