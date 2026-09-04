@@ -21,6 +21,7 @@ _自動產生，最後更新：2026-09-04。請執行 `python3 tools/gen_filemap
   - `oc-readme-portrait.png`
 - **novels/**
   - `README.md`
+  - `寫作規則.md`
 - **sets/**
   - `README.md`
   - **01-艾弍大陸/**
