@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""備好一「大段」的場景包，讓作者拿去 claude.ai 的寫手（4.6）重寫。
+"""備好一組的重寫材料，拆成兩份：參考包（背景）＋純原文（分場，供逐段餵）。
 
-單位＝原文的一組（01…14，各對應原始檔一大段，數萬字），不是單一小場。
-把寫手需要的全部東西湊進一個自足的檔：任務指示、寫作規則、該段逐字原文
-（多場依序）、出場角色卡節錄、導演註、留用清單。寫手在對話裡直接寫出重寫
-正文，不涉及 repo 操作。
+給 claude.ai 的寫手（4.6）用：先讀「參考包」當背景（規則、角色卡、留用清單、
+導演註），再由作者把「純原文」一場一場（或幾場）貼給它重寫。兩份分開，原文不
+和規則角色卡攪在一起，也不會一次塞爆短 context。
 
 用法：
-  python3 tools/prep_scene.py --group 01     # 備第 01 組一整段
-  python3 tools/prep_scene.py 01-003          # 只備單一場（供檢視用）
-輸出：novels/北境/重寫/_待寫/<名>.md（此資料夾已 gitignore）
+  python3 tools/prep_scene.py --group 01     # 備第 01 組
+輸出（都在 novels/北境/重寫/_待寫/，已 gitignore）：
+  參考-組01.md   規則＋出場角色卡＋留用清單＋導演註
+  原文-組01.md   該組逐字原文，一場一段，清楚分隔
 """
 import re, argparse, pathlib
 
@@ -79,53 +79,49 @@ def director_group(group):
     return dn.read_text(encoding="utf-8").strip() if dn.exists() else ""
 
 
-def build(ids, out_name):
-    scenes = [parse_scene(scene_path(i)) for i in ids]
-    # 依序串正文
-    bodies = "\n\n\n".join(b.rstrip() for _, b in scenes)
-    # 出場角色（依出現順序去重）
+def build(ids, name):
+    scenes = [(sid, *parse_scene(scene_path(sid))) for sid in ids]
     names = []
-    for fm, _ in scenes:
+    for _, fm, _ in scenes:
         for n in re.split(r"[、,，]", fm.get("出現角色", "")):
             n = n.strip()
             if n and n not in names:
                 names.append(n)
     cards = cards_for(names)
-    dates = [fm.get("故事日期", "") for fm, _ in scenes if fm.get("故事日期")]
+    notes = director_group(group_of(ids[0]))
+    dates = [fm.get("故事日期", "") for _, fm, _ in scenes if fm.get("故事日期")]
     drange = f"{dates[0]} 到 {dates[-1]}" if dates else ""
-    group = group_of(ids[0])
-    notes = director_group(group)
-
-    p = []
-    p.append(f"# 場景包 {out_name}（重寫用）\n")
-    p.append(
-        "你是北境小說的重寫寫手。這個檔裡有你需要的全部東西，不用去找別的資料。\n\n"
-        "請把下面「原文（本段）」整段重寫、精修潤飾，直接在對話裡輸出重寫後的正文"
-        "（不用存檔、不涉及任何檔案操作）：\n"
-        "1. 逐條遵守「寫作規則」。\n"
-        "2. 依原文的情節與人物；保留原本發生的事，不新增角色、不加角色不該知道的"
-        "資訊。設定與劇情衝突時以劇情為準。\n"
-        "3. 名字對照「留用清單」與角色卡，沿用既有專名，不改名、不另造。\n"
-        "4. 這是一大段、有很多場，依原文順序一場接一場重寫；每場開頭保留故事內的"
-        "時間地點戳記。\n"
-        "5. 篇幅與原文相當或略多；寫完這一整段。\n"
-    )
-    p.append("\n---\n\n## 本段資訊\n")
-    p.append(f"- 段：{out_name}（{ids[0]} 到 {ids[-1]}，共 {len(ids)} 場）\n"
-             f"- 故事日期範圍：{drange}\n"
-             f"- 出場角色：{'、'.join(names)}\n")
-    p.append("\n---\n\n## 寫作規則\n\n" + RULES.read_text(encoding="utf-8"))
-    p.append("\n\n---\n\n## 原文（本段，逐字，供你精修的依據）\n\n" + bodies)
-    if cards:
-        p.append("\n\n---\n\n## 出場角色卡（節錄）\n\n" + "\n\n---\n\n".join(cards))
-    if notes:
-        p.append("\n\n---\n\n## 導演註（作者當初對本段的指示）\n\n" + notes)
-    p.append("\n\n---\n\n## 留用清單（專名要對齊）\n\n" + KEEP.read_text(encoding="utf-8"))
 
     OUTDIR.mkdir(parents=True, exist_ok=True)
-    out = OUTDIR / f"{out_name}.md"
-    out.write_text("\n".join(p), encoding="utf-8")
-    return out
+
+    # 參考包
+    ref = [f"# 參考包 {name}（先讀這份當背景）\n"]
+    ref.append(
+        "你是北境小說的重寫寫手。這份是背景資料：寫作規則、出場角色卡、要對齊的"
+        "專名。先讀進來。作者接下來會把原文一段一段貼給你，你照這些規則把每一段"
+        "重寫、精修潤飾：保留原本發生的事，不新增角色、不加角色不該知道的資訊，"
+        "設定與劇情衝突時以劇情為準，名字沿用既有專名不改名。每段直接輸出重寫正文。\n")
+    ref.append(f"\n本段：{name}（{ids[0]} 到 {ids[-1]}，共 {len(ids)} 場，"
+               f"故事日期 {drange}，出場角色：{'、'.join(names)}）\n")
+    ref.append("\n---\n\n## 寫作規則\n\n" + RULES.read_text(encoding="utf-8"))
+    if cards:
+        ref.append("\n\n---\n\n## 出場角色卡（節錄）\n\n" + "\n\n---\n\n".join(cards))
+    if notes:
+        ref.append("\n\n---\n\n## 導演註（作者當初對本段的指示）\n\n" + notes)
+    ref.append("\n\n---\n\n## 留用清單（專名要對齊）\n\n" + KEEP.read_text(encoding="utf-8"))
+    ref_path = OUTDIR / f"參考-{name}.md"
+    ref_path.write_text("\n".join(ref), encoding="utf-8")
+
+    # 純原文，一場一段
+    raw = [f"# 原文 {name}（逐字，一場一段；作者一段一段貼給寫手）\n"]
+    for sid, fm, body in scenes:
+        loc = fm.get("時段地點", "")
+        raw.append(f"\n\n────── 場 {sid}　{fm.get('故事日期','')}　{loc} ──────\n\n"
+                   + body.rstrip())
+    raw_path = OUTDIR / f"原文-{name}.md"
+    raw_path.write_text("\n".join(raw), encoding="utf-8")
+
+    return ref_path, raw_path
 
 
 def main():
@@ -139,18 +135,20 @@ def main():
         if not ids:
             print(f"找不到第 {args.group} 組的場次。")
             return
-        out = build(ids, f"組-{args.group}")
+        name = f"組-{args.group}"
     elif args.sid:
         if not scene_path(args.sid).exists():
             print(f"找不到場次：{args.sid}")
             return
-        out = build([args.sid], args.sid)
+        ids, name = [args.sid], args.sid
     else:
-        print("請用 --group 01 備一整段，或給場號備單場。")
+        print("請用 --group 01 備一整組。")
         return
 
-    print(f"已備好場景包：{out.relative_to(ROOT)}")
-    print("把這個檔上傳到 claude.ai 的 4.6，叫它照檔重寫；寫完把正文貼回來給整理窗。")
+    ref_path, raw_path = build(ids, name)
+    print("備好兩份（分開）：")
+    print(f"  參考包：{ref_path.relative_to(ROOT)}（給寫手先讀當背景）")
+    print(f"  純原文：{raw_path.relative_to(ROOT)}（作者一場一段貼給寫手重寫）")
 
 
 if __name__ == "__main__":
