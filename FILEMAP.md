@@ -25,6 +25,7 @@ _自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap
   - **北境/**
     - `README.md`
     - `操作說明.md`
+    - `留用清單.md`
     - **原文/**
       - `01-260217.txt`
       - `02-260218.txt`
@@ -177,6 +178,7 @@ _自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap
   - `world.template.md` — # 世界名稱
 - **tools/**
   - `gen_filemap.py`
+  - `scan_novel_names.py`
   - `split_beijing.py`
   - `split_set01.py`
 
