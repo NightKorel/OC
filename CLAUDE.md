@@ -25,6 +25,7 @@ FILEMAP.md               檔案地圖（自動產生）
 3. 忠實原則。整理既有設定時一字不改內文，只做拆分、加 metadata、修結構。要改動設定內容必須先問作者。
 4. 每個角色卡開頭放 YAML frontmatter（name/id/set/race/age/pair/status/image_prompt…），劇情線放（title/set/type/order/status），方便程式化處理與未來做酷東西。
 5. 每一世界只掌握自己世界的資訊；跨世界共用的東西才放 `shared/`。
+6. 推送鐵則（作者鐵則）。任何 commit 都要推上 `main`，不可只留在功能分支，免得別的視窗看不到。若在功能分支開發，推完分支後一併快轉／合併到 `main`；有衝突先把 `main` 併回來再推，不覆蓋別人的 commit。
 
 ## 小說寫作專區（novels/）
 
