@@ -57,6 +57,8 @@ _自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap
         - `角色卡與身高.md`
     - **重寫/**
       - `01-001.md`
+      - `01-002.md`
+      - `01-003.md`
       - `README.md`
 - **sets/**
   - `README.md`
