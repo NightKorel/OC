@@ -24,8 +24,12 @@ _自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap
   - `寫作規則.md`
   - **北境/**
     - `README.md`
+    - `劇情整理.md`
+    - `名詞庫.md`
     - `操作說明.md`
+    - `整理任務.md`
     - `留用清單.md`
+    - `設定書.md`
     - **原文/**
       - `01-260217.txt`
       - `02-260218.txt`
@@ -52,7 +56,13 @@ _自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap
       - **角色/**
         - `角色卡與身高.md`
     - **重寫/**
+      - `01-001.md`
       - `README.md`
+      - **_待寫/**
+        - `01-001.md`
+        - `原文-組-01.md`
+        - `參考-組-01.md`
+        - `組-01.md`
 - **sets/**
   - `README.md`
   - **01-艾弍大陸/**
@@ -178,6 +188,7 @@ _自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap
   - `world.template.md` — # 世界名稱
 - **tools/**
   - `gen_filemap.py`
+  - `prep_scene.py`
   - `scan_novel_names.py`
   - `split_beijing.py`
   - `split_set01.py`
