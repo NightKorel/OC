@@ -1,6 +1,6 @@
 # 檔案地圖 (FILEMAP)
 
-_自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap.py` 更新，勿手動編輯。_
+_自動產生，最後更新：2026-09-11。請執行 `python3 tools/gen_filemap.py` 更新，勿手動編輯。_
 
 ## 世界套目錄
 
@@ -17,6 +17,7 @@ _自動產生，最後更新：2026-09-05。請執行 `python3 tools/gen_filemap
 - `CLAUDE.md`
 - `FILEMAP.md`
 - `README.md`
+- `index.html`
 - **assets/**
   - `oc-readme-portrait.png`
 - **novels/**
